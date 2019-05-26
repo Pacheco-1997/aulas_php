@@ -1,0 +1,19 @@
+<?php
+// o trecho de codigo :string determina que o valor a ser retornado sera uma string
+function soma(float ...$valores):string {
+
+    return array_sum($valores);
+}
+
+echo var_dump(soma(2,2));
+
+echo"<br>";
+
+echo soma(25,33);
+
+echo"<br>";
+
+echo soma(1.5,3.2);
+
+echo"<br>";
+?>
