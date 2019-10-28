@@ -1,10 +1,10 @@
 <?php
 
-$filename = "usuarios.csv";
+$filename = "usuarios.csv";// nome do arquivo
 
-if(file_exists($filename)){
+if(file_exists($filename)){// abrindo arquivo caso exista
 
-    $file = fopen($filename, "r");
+    $file = fopen($filename, "r");// atribuindo em file oque retornar da função fopen, fopen abre o arquivo pelo nome e da permição de leitura
 
     $headers = explode(",", fgets($file));
 
