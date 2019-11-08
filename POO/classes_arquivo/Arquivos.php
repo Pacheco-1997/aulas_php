@@ -3,7 +3,7 @@
 <form method="POST" enctype="multipart/form-data" action="Arquivos.php">
      
      <input type="file" name="fileUpload">
-     <button id="sub" type="submit">Enviar</button>
+     <button id="sub" name="submit" type="submit">Enviar</button>
 </form>
 
 <?php
@@ -43,7 +43,7 @@ class Arquivos{
             if (move_uploaded_file($file["tmp_name"], $dirUploads . DIRECTORY_SEPARATOR . $file["name"])){
         
                 echo "<script> alert('Upload feito com sucesso') </script>";
-                echo "<a href='https://cdn.cz-usa.com/hammer/wp-content/uploads/2018/12/1012.png'>shuds</a>";
+                
                 // echo $file["size"];
         
         
